@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+    
+</body>
+<header></header>
+        <nav>
+            <a href="index.html">Inicio</a>
+        </nav>
+    </header>
+</html>
+<article>
+    <h1>Registro de Datos</h1>
+</article>
+<form action="mailto:xxx@gmail.com" method="post" enctype="text/plain">
+    <fieldset>
+         <h2>Rellenar formulario:</h2>
+         <ul>
+              <li>
+                   <label id="Nombre" for="Nombre">Nombre:</label>
+                   <input class="input" id="Nombre" type="text"required width="300px">
+             </li>
+             <li>
+                   <label id="primer" for="primer">Primer Apellido:</label>
+                   <input class="input" id="primer" type="text"required width="300px">
+             </li>
+             <li>
+                   <label id="Segundo" for="Segundo">Segundo Apellido:</label>
+                   <input class="input" id="Segundo" type="text" required width="300px">
+             </li>
+             <li>
+                <label id="date" for="fecha">Fecha de Nacimiento <span>opcional</span> </label>
+                <input class="input" id="fecha" type="date" required width="300px">
+          </li>
+             <li>
+                   <label id="mail" for="mail">E-mail de contacto:</label>
+                   <input class="input" id="mail" type="text" name="mail" placeholder="xxx@gmail.com" required 
+                   pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$">
+             </li>
+             <li>
+                   <label id="Mensaje" for="Mensaje">Comentario:<span>opcional</span></label>
+                   <textarea class="input" id="Mensaje" name="Mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje..."></textarea>
+            </li>
+            <li>
+                  <div class="checkbox">
+                       <input id="check" type="checkbox" required >
+                       <a href="#">He leido y acepto la politica de privacidad</a>
+                  </div>
+            </li>
+            <li>
+                  <label for="contactar"></label>
+                  <button style="background-color: rgb(0, 225, 255) ;" type="submit">ENVIAR</button>
+            </li>
+            <li>
+                  <label for="reset"></label>
+                  <button style="background-color: rgb(161, 156, 158) ;" type="submit">Reiniciar</button>
+            </li>
+      </ul>
+   </fieldset>
+</form>
+<script src="js/validacion_formulario.js"></script>

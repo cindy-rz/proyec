@@ -1,0 +1,114 @@
+/*body {
+    background-image: url(playa.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}*/
+.p{
+    color: #c46a9e;
+}
+h1{
+    color:rgb(255,255,255);
+    background-color: rgb(190, 111, 187);
+    text-align: center;
+    font-weight: bold; /* Texto en negrita */
+    font-style: italic; /* Texto en cursiva */
+}
+body{
+    background-color: rgb(253, 214, 242);
+}
+
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: center; 
+}
+
+nav li{
+    float: left;
+}
+
+nav li a{
+    display: block;
+    color: rgb(165, 247, 236);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; /* Quitamos el subrayado */
+}
+
+nav li a:hover{
+    background-color: #111;
+}
+
+#listas-ordenadas{
+    background-color: #c9a6a6;
+    padding: 10px;
+    border: dotted;
+    border-radius: 10% / 10%;
+    margin: 10px;
+}
+
+#element {
+    border-width: medium;
+    border-style: solid;
+    border-color: #9c1c67;
+    text-align: justify;
+    padding: 5%;
+/*    background-color: bisque;*/
+}
+
+.p1{
+    color: rgb(177, 68, 159);
+}
+
+.p2{
+    color: rgb(119, 17, 133);
+}
+
+.p3{
+    color: rgb(196, 39, 157);
+}
+.p4{
+    color: rgb(102, 13, 72);
+}
+
+
+.tarjeta{
+    background-color: rgb(218, 133, 175);
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 5px solid rgb(169, 241, 226);
+    border-radius: 10px;   
+    box-shadow: 0 2px 5px rgba(0,0,0,0.p1);
+}
+
+.tarjeta img{
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.tarjeta p{
+    line-height: 1.5;
+}
+
+/*.tarjeta a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: aquamarine;
+    color: rgb(12, 11, 12);
+    text-decoration: none;
+}
+
+.tarjeta:hover{
+    box-shadow: 0 4px 8px rgba(199, 113, 113, 0.2);
+}*/

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script src="calcud.js"></script>
+    
+</head>
+<header>
+    <nav>
+        <a href="index.html">Inicio</a>
+    
+    </nav>
+    <h2 class="h2">CALCULADORA</h2>
+    
+</header>
+
+<body onload="init();">
+    <table class= "calculadora">
+        <tr>
+            <td colspan="4"><span id="resultado"></span></tr>
+        </tr>
+        <tr>
+            <td><button id="siete">7</button></td>
+            <td><button id="ocho">8</button></td>
+            <td><button id="nueve">9</button></td>
+            <td><button id="division">/</button></td>
+        </tr>
+        <tr>
+            <td><button id="cuatro">4</button></td>
+            <td><button id="cinco">5</button></td>
+            <td><button id="seis">6</button></td>
+            <td><button id="multiplicacion">*</button></td>
+        </tr>
+        <tr>
+            <td><button id="uno">1</button></td>
+            <td><button id="dos">2</button></td>
+            <td><button id="tres">3</button></td>
+            <td><button id="resta">-</button></td>
+        </tr>
+        <tr>
+            <td><button id="igual">=</button></td>
+            <td><button id="reset">C</button></td>
+            <td><button id="cero">0</button></td>
+            <td><button id="suma">+</button></td>
+        </tr>
+
+    </table>
+     
+
+
+    <style>
+h2{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: palevioletred;
+}
+.calculadora{
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: blueviolet;
+    width: 375px;
+    height: 500px;
+    border-radius: 25px;
+    position: relative; /* si necesitas posicionar el hijo */
+  overflow: hidden; /* evitar que el hijo se desborde */
+}
+
+.calculadora td button{
+    display:block;
+    width: 70px;
+    height: 70px;
+    font-size: 25px;
+}
+
+#resultado{
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    margin: 14px;
+    width: 300px;
+    height:  100px;
+    line-height: 100px;
+    background-color: aqua;
+    border-radius: 25px;
+    overflow-y: scroll;
+    max-width: 100%;
+}
+
+
+    </style>
+    
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nombre del autor">
+    <title>Bootcamp Desarrollo Web Full Stack</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+    <!-- Parte superior de la web -->
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="sobremi.html">Sobre mi</a>
+            <a href="contacto.html">contacto</a>
+            <a href="juego1.html">Juego de Memoria</a>
+            <a href="calculadora.html">Calculadora</a>
+            
+            <!--<a href="https://www.linkedin.com/in/cindy-zambrano-276269298/">Contacto linkedin/Cindy-Zambrano</a> -->
+        </nav>
+        <!---<section class="avatars">
+            <img src="https://www.shutterstock.com/image-vector/beautiful-brunette-girl-dark-chocolate-260nw-578285074.jpg" alt="">
+            <img src="data:image/jpeg;base64,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" alt="">
+
+
+        </section>-->
+    </header>
+    <h1 class="titulo">Proyecto</h1>
+    <!-- Fin parte superior de la web -->
+
+    <!-- Contenido central de la web -->
+    <main>
+        <!-- Secciones -->
+        <section>
+            <article>
+                <!-- Contenido independiente. Es reutilizable -->
+                <h1>Desarrollo web fullstack  </h1>
+            <section id="container">
+                <section class="avatars">
+                    <a href="sobremi.html"> <img src="https://storage.googleapis.com/1mb-images/6465e8319de7b94a9cf01387/bots-avatar/1693493747982_Beige_and_White_Be_Yourself_Square_Pillow.gif"></a>
+                    <img src="https://img.freepik.com/vector-gratis/mujer-trabajando-nueva-aplicacion_23-2148682102.jpg" alt="">
+                    <a href="contacto.html"><img src="https://media3.giphy.com/media/3a53VvGpzUgh05qq7W/200w.gif?cid=6c09b952su3l8xv3590urqppirefrg99ef22m8aa3kzo8877&ep=v1_gifs_search&rid=200w.gif&ct=g"></a>
+                </section>
+            </section>
+                <nav>
+
+                    <!--<a href="https://www.linkedin.com/in/cindy-zambrano-276269298/">Contacto linkedin/Cindy-Zambrano</a> -->
+                </nav>
+                
+                <button>
+                <a href="#openModal"> REGISTRATE</a>
+                <div id="openModal" class="modalDialog">
+                    <div>
+                        <a href="#"title="Close" class="close">X</a>
+                        <!--<h2>mi modal</h2>
+                        <p>ejemplo de modal</p>-->
+                        <!---<article>
+                            <h1>Registro de Datos</h1>
+                        </article>-->
+                        <form action="mailto:xxx@gmail.com" method="post" enctype="text/plain">
+                            <fieldset>
+                                 <h2>Rellenar formulario:</h2>
+                                 <ul>
+                                      <li>
+                                           <label id="Nombre" for="Nombre">Nombre:</label>
+                                           <input class="input" id="Nombre" type="text"required width="300px">
+                                     </li>
+                                     <li>
+                                           <label id="primer" for="primer">Primer Apellido:</label>
+                                           <input class="input" id="primer" type="text"required width="300px">
+                                     </li>
+                                     <li>
+                                           <label id="Segundo" for="Segundo">Segundo Apellido:</label>
+                                           <input class="input" id="Segundo" type="text" required width="300px">
+                                     </li>
+                                     <li>
+                                        <label id="date" for="fecha">Fecha de Registro <span>opcional</span> </label>
+                                        <input class="input" id="fecha" type="date" required width="300px">
+                                  </li>
+                                     <li>
+                                           <label id="mail" for="mail">E-mail de contacto:</label>
+                                           <input class="input" id="mail" type="text" name="mail" placeholder="xxx@gmail.com" required 
+                                           pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$">
+                                     </li>
+                                     <li>
+                                           <label id="Mensaje" for="Mensaje">Comentario:<span>opcional</span></label>
+                                           <textarea class="input" id="Mensaje" name="Mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje..."></textarea>
+                                    </li>
+                                    <li>
+                                          <div class="checkbox">
+                                               <input id="check" type="checkbox" required >
+                                               <a href="#">He leido y acepto la politica de privacidad</a>
+                                          </div>
+                                    </li>
+                                    <li>
+                                          <label for="contactar"></label>
+                                          <button style="background-color: rgb(0, 225, 255) ;" type="submit">ENVIAR</button>
+                                    </li>
+                                    <li>
+                                          <label for="reset"></label>
+                                          <button style="background-color: rgb(161, 156, 158) ;" type="submit">Reiniciar</button>
+                                    </li>
+                              </ul>
+                           </fieldset>
+                        </form>
+                        <script src="js/validacion_formulario.js"></script>
+                    </div>
+                </div>
+            </button>
+                <!--<div class="gif">
+                    <img class="gif" src="https://cdn.pixabay.com/animation/2023/11/30/21/26/21-26-45-818_512.gif">
+                
+                </div>--->
+                
+                
+            </article>
+            <br>
+
+            <section>
+                <h2></h2>
+                <div id="carouselExample" class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://cdn.dribbble.com/users/470545/screenshots/3471475/calculater.gif" alt="">
+                            <div class="carousel-caption">
+                                <h3></h3>
+                                <p></p>
+                                <button><a href="calculadora.html" class="btn btn-primary">Live Demo CALCULADORA</a></button>
+                                <a href="#" class="btn btn-secondary">Code</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://cdn.classpoint.io/wp-content/uploads/Memory-Game.gif" alt="Second slide">
+                            <div class="carousel-caption">
+                                <h3></h3>
+                                <p></p>
+                                <button><a href="juego1.html" class="btn btn-primary">Live Demo JUEGO DE MAMORIA</a></button>
+                                <a href="#" class="btn btn-secondary">Code</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../Imágenes/profile3.jpg" alt="Third slide">
+                            <div class="carousel-caption">
+                                <h5>Third Slide Title</h5>
+                                <p>Brief description of the third slide.</p>
+                                <a href="#" class="btn btn-primary">Live Demo</a>
+                                <a href="#" class="btn btn-secondary">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-control-prev" onclick="prevSlide()">&#10094;</div>
+                    <div class="carousel-control-next" onclick="nextSlide()">&#10095;</div>
+                </div>
+                
+                <script>
+                    let currentIndex = 0;
+                
+                    function showSlide(index) {
+                        const slides = document.querySelectorAll('.carousel-item');
+                        if (index >= slides.length) {
+                            currentIndex = 0;
+                        } else if (index < 0) {
+                            currentIndex = slides.length - 1;
+                        } else {
+                            currentIndex = index;
+                        }
+                        const offset = -currentIndex * 100;
+                        document.querySelector('.carousel-inner').style.transform = `translateX(${offset}%)`;
+                    }
+                
+                    function nextSlide() {
+                        showSlide(currentIndex + 1);
+                    }
+                
+                    function prevSlide() {
+                        showSlide(currentIndex - 1);
+                    }
+                
+                    document.addEventListener('DOMContentLoaded', () => {
+                        showSlide(currentIndex);
+                    });
+                </script>
+            </section>    
+        </section>        
+    </main>
+    <nav>
+    <footer> Talento Tech - 2024 - Todos los derechos reservados </footer> 
+</nav>
+</body>
+
+</html>
+    
+
+
+</body>
+</html>
